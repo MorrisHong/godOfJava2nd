@@ -6,6 +6,7 @@ public class NumberObject {
 		String data = "e`1";
 		long number = sample.parseLong(data);
 		System.out.println(number);
+		sample.printOtherBase(number);
 	}
 	public long parseLong(String data) {
 		Long number = -1L;
@@ -17,5 +18,14 @@ public class NumberObject {
 		}
 		
 		return number;
+	}
+	public void printOtherBase(long value) {
+		String binary = Long.toBinaryString(value);
+		String hex = Long.toHexString(value);
+		String octal = Long.toOctalString(value);
+		
+		System.out.println("Origin : " + value);
+		System.out.println("Hex : " + hex);
+		System.out.println("Octal : " + octal);
 	}
 }
