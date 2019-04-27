@@ -6,13 +6,13 @@ public class GenericSample {
 		sample.checkCastingDTO();
 	}
 	public void checkCastingDTO() {
-		CastingDTO dto1 = new CastingDTO();
+		CastingDTO<String> dto1 = new CastingDTO<>();
 		dto1.setObj(new String());
 		
-		CastingDTO dto2 = new CastingDTO();
+		CastingDTO<StringBuffer> dto2 = new CastingDTO<>();
 		dto2.setObj(new StringBuffer());
 		
-		CastingDTO dto3 = new CastingDTO();
+		CastingDTO<StringBuilder> dto3 = new CastingDTO<>();
 		dto3.setObj(new StringBuilder());
 	}
 }
