@@ -2,9 +2,9 @@ package godOfJava2nd.ch21;
 
 import java.io.Serializable;
 
-public class CastingDTO implements Serializable {
-	private Object obj;
-	public void setObj(Object obj) {
+public class CastingDTO<T> implements Serializable {
+	private T obj;
+	public void setObj(T obj) {
 		this.obj = obj;
 	}
 	public Object getObj() {
