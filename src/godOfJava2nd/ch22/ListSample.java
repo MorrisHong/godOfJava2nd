@@ -54,4 +54,20 @@ public class ListSample {
 			System.out.println("list.get("+i+") = " +list.get(i));
 		}
 	}
+	public void checkArrayList6() {
+		ArrayList<String> list = new ArrayList<>();
+		list.add("A");
+		String[] strList = list.toArray(new String[0]);
+	}
+	public void checkArrayList7() {
+		ArrayList<String> list = new ArrayList<>();
+		list.add("A");
+		list.add("B");
+		list.add("C");
+		String[] tempArray = new String[3];
+		String[] strList = list.toArray(tempArray);
+		for(String tmp : strList) {
+			System.out.println(tmp);
+		}
+	}
 }
