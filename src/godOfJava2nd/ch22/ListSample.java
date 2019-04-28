@@ -79,11 +79,11 @@ public class ListSample {
 		list.add("B");
 		list.add("C");
 		list.add("A");
-		System.out.println("Removed "+list.remove(0));
+//		System.out.println("Removed "+list.remove(0));
 //		System.out.println(list.remove("A"));
-//		ArrayList<String> temp = new ArrayList<String>();
-//		temp.add("A");
-//		list.removeAll(temp);
+		ArrayList<String> temp = new ArrayList<String>();
+		temp.add("A");
+		list.removeAll(temp);
 		for(int i = 0; i < list.size(); i++) {
 			System.out.println("list.get("+i+")="+list.get(i));
 		}
