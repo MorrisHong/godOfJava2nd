@@ -5,8 +5,9 @@ import java.util.ArrayList;
 public class ListSample {
 	public static void main(String[] args) {
 		ListSample sample = new ListSample();
-		sample.checkArrayList();
-		sample.checkArrayList2();
+//		sample.checkArrayList();
+//		sample.checkArrayList2();
+		sample.checkArrayList4();
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -31,6 +32,16 @@ public class ListSample {
 		
 		for(String str : list) {
 			System.out.println(str);
+		}
+	}
+	public void checkArrayList4() {
+		ArrayList<String> list = new ArrayList<>();
+		list.add("A");
+		
+		ArrayList<String> list2 = list;
+		list.add("Ooops");
+		for(String tmp : list2) {
+			System.out.println(tmp);
 		}
 	}
 }
