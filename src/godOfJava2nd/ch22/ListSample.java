@@ -7,7 +7,8 @@ public class ListSample {
 		ListSample sample = new ListSample();
 //		sample.checkArrayList();
 //		sample.checkArrayList2();
-		sample.checkArrayList4();
+//		sample.checkArrayList4();
+		sample.checkArrayList5();
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -42,6 +43,15 @@ public class ListSample {
 		list.add("Ooops");
 		for(String tmp : list2) {
 			System.out.println(tmp);
+		}
+	}
+	public void checkArrayList5() {
+		ArrayList<String> list = new ArrayList<>();
+		list.add("A");
+		list.add("B");
+		int listSize = list.size();
+		for(int i = 0; i < listSize; i++) {
+			System.out.println("list.get("+i+") = " +list.get(i));
 		}
 	}
 }
