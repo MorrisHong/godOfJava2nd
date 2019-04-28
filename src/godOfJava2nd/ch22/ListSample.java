@@ -8,7 +8,10 @@ public class ListSample {
 //		sample.checkArrayList();
 //		sample.checkArrayList2();
 //		sample.checkArrayList4();
-		sample.checkArrayList5();
+//		sample.checkArrayList5();
+//		sample.checkArrayList6();
+//		sample.checkArrayList7();
+		sample.checkArrayList8();
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -68,6 +71,21 @@ public class ListSample {
 		String[] strList = list.toArray(tempArray);
 		for(String tmp : strList) {
 			System.out.println(tmp);
+		}
+	}
+	public void checkArrayList8() {
+		ArrayList<String> list = new ArrayList<>();
+		list.add("A");
+		list.add("B");
+		list.add("C");
+		list.add("A");
+		System.out.println("Removed "+list.remove(0));
+//		System.out.println(list.remove("A"));
+//		ArrayList<String> temp = new ArrayList<String>();
+//		temp.add("A");
+//		list.removeAll(temp);
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println("list.get("+i+")="+list.get(i));
 		}
 	}
 }
